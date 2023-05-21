@@ -14,10 +14,12 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script>
         // Using Pure React
+
         // Created h1 tag using React with message to display.
         const element = React.createElement("h1", { className: "heading", id: "demo" }, "Hello Muskaan. Welcome to Namaste React!"
             , React.createElement("span", {}, "This is a span element."));
         console.log(element);
+
         // created root variable for the element having id = root in HTML, to which DOM manipulation will be done.
         const root = ReactDOM.createRoot(document.getElementById("root"));
         console.log(root);
