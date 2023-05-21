@@ -8,12 +8,20 @@
     <title>Namaste React</title>
 </head>
 <body>
-    <h1>Namaste React from JavaScript!</h1>
+    <div id="root"></div>
 </body>
 <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 <script>
-    const element = React.createElement("h1",)
+    // Using Pure React
+    // Created h1 tag using React with message to display.
+    const element = React.createElement("h1",{},"Hello Muskaan. Welcome to Namaste React!");
+    
+    // created root variable for the element having id = root in HTML, to which DOM manipulation will be done.
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+
+    // Added the new element in root.
+    root.render(element);
 </script>
 
 </html>
