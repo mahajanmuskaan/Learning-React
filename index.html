@@ -11,9 +11,13 @@
 <body>
     <div id="root"></div>
     <div id="left"></div>
+
+    <!-- We now don't need these CDN links for React and ReactDOM because we have installed the dependencies of npm - React and React-DOM 
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script src="App.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
+    
+    <!-- Browser doesnot understand import. we have to inform its modules, use type="module" in script tag -->
+    <script type="module" src="App.js"></script>
 </body>
 
 </html>

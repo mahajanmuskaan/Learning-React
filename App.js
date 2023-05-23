@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 // Using Pure React
 
 // Created h1 tag using React with message to display.
