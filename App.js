@@ -46,3 +46,68 @@ const divEle = React.createElement(
 );
 
 root2.render(divEle);
+
+
+// JSX Introduction - JSX is a HTML Like Syntax but not a HTML inside Javascript.
+
+const name = "Muskaan";
+const styles = {
+    textAlign: "center",
+    color: "red",
+    fontSize: "2rem"
+}
+const parastyle = {
+    textAlign: "center",
+    color: "blue",
+    fontSize: "1.5rem"
+}
+const imagestyle = {
+    marginLeft: "35rem",
+    width: "200px",
+    height: "300px"
+}
+const newHeading = (
+    <>
+        <div>
+            <h1 id="title" key="newh1" style={styles}>
+                Welcome {name}, to Namaste React!!
+            </h1>
+            <p style={parastyle}>Hi, this is paragraph tag written in JSX.</p>
+            <img style={imagestyle} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH1OQtddA8vkWeuyeVtgSurQhHp0oowHifo3Ge5OJEwQa3ItK67OpuO4UelUZ8-0EW7bg&usqp=CAU" alt="JSX Logo" />
+            <span>
+                <p style={parastyle}>Hi, this is nested paragraph tag written in JSX.</p>
+            </span>
+        </div>
+    </>
+);
+
+const right = ReactDOM.createRoot(document.getElementById("right"));
+right.render(newHeading);
+
+
+// React Components Introduction
+// Functional Component Introduction: Functional Component is just a Function.
+
+const Headingold = () => (
+    <div>
+        <h4>This is a H4 tag heading from Functional Component.
+        </h4>
+    </div>
+
+);
+
+const Heading = () => (
+    /* I can get already created React element , calculations here also by adding its name in {} braces */
+    <div>
+        {newHeading}
+        {13 + 97}
+        <h3>This is a H3 tag heading from Functional Component.
+        </h3>
+        <Headingold />
+    </div>
+
+);
+
+console.log(Heading);
+const root4 = ReactDOM.createRoot(document.getElementById("bottom"));
+root4.render(<Heading />);
