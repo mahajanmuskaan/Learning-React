@@ -103,7 +103,7 @@ const Heading = () => (
         {13 + 97}
         <h3>This is a H3 tag heading from Functional Component.
         </h3>
-        <Headingold />
+        {/* <Headingold />  OR  {Headingold()}*/}
     </div>
 
 );
